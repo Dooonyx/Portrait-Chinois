@@ -1,0 +1,311 @@
+body {
+  margin: 0;
+  background-image: url("images/fond.png");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Montserrat Alternates', sans-serif;
+  height: 100%;
+  display: grid;
+  font-size: 25px;
+  overflow-x: hidden;
+}
+
+.image {
+  width: 500px;
+  border: 2mm solid #E2AF6E;
+}
+
+.langue {
+  position: absolute;
+  right: 0em;
+  top: 0em;
+
+}
+
+.bloc {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+}
+
+.fond {
+  background-image: url("images/personaligne.png");
+  background-size: cover 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
+  height: 6546px;
+}
+
+.presentation {
+  font-size: 50px;
+  color: white;
+  background-color: #E2AF6E;
+  text-align: center;
+
+}
+
+.intro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jeu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 150px;
+}
+
+.sport {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 100px;
+}
+
+.boisson {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 150px;
+}
+
+.anime {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 150px;
+}
+
+.plat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 150px;
+}
+
+.film {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 200px;
+}
+
+.instrument {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 150px;
+}
+
+.one,
+.three,
+.five,
+.seven {
+  transform: rotate(-15deg);
+  position: relative;
+  right: 100px;
+}
+
+.two,
+.four,
+.six {
+  transform: rotate(15deg);
+  position: relative;
+  left: 200px;
+}
+
+.four {
+  left: 150px;
+}
+
+.six {
+  width: 400px;
+  left: 130px;
+}
+
+.seven {
+  right: 130px;
+}
+
+.txtjeu,
+.txtsport,
+.txtboisson,
+.txtanime,
+.txtplat,
+.txtfilm,
+.txtinstrument {
+  border: solid #E2AF6E;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  margin: 5px;
+}
+
+.txt1 {
+  width: 400px;
+  height: 150px;
+}
+
+.txt2 {
+  width: 600px;
+  height: 120px;
+}
+
+.txt3 {
+  width: 450px;
+  height: 120px;
+}
+
+.txt4,
+.txt15,
+.txt18,
+.txt21,
+.txt22 {
+  width: 400px;
+}
+
+.txt5 {
+  width: 200px;
+  list-style-type: none;
+}
+
+.txt7,
+.txt8,
+.txt17 {
+  width: 600px;
+}
+
+.txt9 {
+  width: 280px;
+}
+
+.txt6,
+.txt10,
+.txt11,
+.txt12,
+.txt13,
+.txt14,
+.txt19,
+.txt20,
+.txt25 {
+  width: 500px;
+}
+
+.txt16 {
+  width: 280px;
+  list-style-type: none;
+}
+
+.txt23 {
+  width: 300px;
+}
+
+.txt24 {
+  width: 450px;
+}
+
+.cachejeu,
+.cachesport,
+.cacheboisson,
+.cacheanime,
+.cacheplat,
+.cachefilm,
+.cacheinstrument {
+  visibility: hidden;
+}
+
+@media screen and (max-width:1525px) {
+  body {
+    font-size: 15px;
+  }
+
+  .image {
+    width: 300px;
+  }
+
+  .txtjeu,
+  .txtsport,
+  .txtboisson,
+  .txtanime,
+  .txtplat,
+  .txtfilm,
+  .txtinstrument .txt .txt1,
+  .txt2,
+  .txt3,
+  .txt4,
+  .txt5,
+  .txt6,
+  .txt7,
+  .txt8,
+  .txt9,
+  .txt10,
+  .txt11,
+  .txt12,
+  .txt13,
+  .txt14,
+  .txt15,
+  .txt16,
+  .txt17 {
+    width: none;
+    height: auto;
+  }
+
+  .txt2, .txt6, .txt7, .txt8{
+    width: 300px;
+  }
+
+  .jeu, .sport, .boisson, .anime, .plat, .film, .instrument{
+    left: auto;
+    right: auto;
+  }
+
+  .one{
+    right: 50px;
+  } 
+  
+  .two{
+    left: 50px;
+  } 
+  
+  .four{
+    left: 50px;
+  } 
+  
+  .five{
+    left: 50px;
+  }
+
+  .six{
+    width: 250px;
+    left: 50px;
+  } 
+  
+  .seven{
+    right: 20px;
+  }
+
+}
